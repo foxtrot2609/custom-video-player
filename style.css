@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.player {
+
+    border: 1px solid red;
+}
+
+.player__video {}
+
+.player__controls {}
+
+.progress {
+    display: flex;
+    height: 5px;
+    border: 1px solid black;
+}
+
+.progress__filled {
+    
+    background: #ffc600;
+    flex: 0;
+
+}
