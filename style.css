@@ -10,26 +10,71 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 .player {
-
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.player__video {}
+h3 {
+    color: rgb(255, 198, 0);
+    text-align: center;
+}
 
-.player__controls {}
+.player__video {
+    height: 130%;
+}
+
+.header,
+.player__controls {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(204, 7, 7, 0.2);
+    transition: all .7s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    top: -5vh;
+}
+
+.player:hover .header {
+    top: 0;
+}
+
+.player__controls {
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    bottom: calc(-6vh + 5px);
+}
+
+.player:hover .player__controls {
+    bottom: 0;
+}
 
 .progress {
     display: flex;
     height: 5px;
-    border: 1px solid black;
+    width: 100%;
 }
 
 .progress__filled {
-    
-    background: #ffc600;
+    background: rgb(255, 198, 0);
     flex: 0;
+}
 
+.controls__btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 }

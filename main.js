@@ -29,7 +29,6 @@ function skip() {
 }
 
 function handleRangeUpdate() {
-  console.log(this.name);
   video[this.name] = this.value;
 }
 
@@ -87,3 +86,15 @@ progress.addEventListener("mousemove", (e) => mousedown && scrub(e));
 progress.addEventListener("mousedown", () => (mousedown = true));
 progress.addEventListener("mouseup", () => (mousedown = false));
 openButton.addEventListener("click", openFullScreen);
+
+
+// player.addEventListener("mousemove", (e) => {
+//   if (!fullScreenFlag) {
+//     document.documentElement.style.cursor = "auto";
+//     return;
+//   }
+
+//   document.documentElement.style.cursor = "auto";
+  
+//   console.log(e)
+// });
