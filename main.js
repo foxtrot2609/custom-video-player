@@ -69,9 +69,11 @@ const openFullScreen = () => {
   if (!fullScreenFlag) {
     fullScreen(player);
     fullScreenFlag = true;
+    openButton.innerHTML = '<svg id="svg12" width="100%" viewBox="0 0 36 36" version="1.1" height="100%"><g stroke-width="1" stroke="none" id="Page-1" fill-rule="evenodd" fill="none"><g transform="translate(-246.000000, -246.000000)" id="Core" fill="#fff"><g transform="translate(257.000000, 257.000000)" id="fullscreen-exit"><path id="Shape" d="M0,11 L3,11 L3,14 L5,14 L5,9 L0,9 L0,11 L0,11 Z M3,3 L0,3 L0,5 L5,5 L5,0 L3,0 L3,3 L3,3 Z M9,14 L11,14 L11,11 L14,11 L14,9 L9,9 L9,14 L9,14 Z M11,3 L11,0 L9,0 L9,5 L14,5 L14,3 L11,3 L11,3 Z" /></g></g></g></svg>';    
   } else {
     fullScreenCancel();
     fullScreenFlag = false;
+    openButton.innerHTML = '<svg height="100%" version="1.1" viewBox="0 0 36 36" width="100%"><g class="ytp-fullscreen-button-corner-0"><use class="ytp-svg-shadow" xlink:href="#ytp-id-85"></use><path class="ytp-svg-fill" d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z" id="ytp-id-85"></path></g><g class="ytp-fullscreen-button-corner-1"><use class="ytp-svg-shadow" xlink:href="#ytp-id-86"></use><path class="ytp-svg-fill" d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z" id="ytp-id-86"></path></g><g class="ytp-fullscreen-button-corner-2"><use class="ytp-svg-shadow" xlink:href="#ytp-id-87"></use><path class="ytp-svg-fill" d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z" id="ytp-id-87"></path></g><g class="ytp-fullscreen-button-corner-3"><use class="ytp-svg-shadow" xlink:href="#ytp-id-88"></use><path class="ytp-svg-fill" d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z" id="ytp-id-88"></path></g></svg>';
   }
 };
 
