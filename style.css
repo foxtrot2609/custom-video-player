@@ -217,9 +217,11 @@ button:active {
 }
 
 .player__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80%;
     margin: 0 2px;
-    padding: 2px 0;
     color: #fff;
     font-size: x-large;
     background-color: #9b4b4b;
